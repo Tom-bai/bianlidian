@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<import src = "../template/template.wxml"/>
+<view class="container">
+  <view class='header'>
+    <view class='logo'></view>
+    <view class='username'></view>
+  </view>
+  <!--main  -->
+  <view class='main'>
+    <!--左  -->
+    <view class='mu-left'>
+      <scroll-view scroll-y="true" class='scroll-view'>
+        <block wx:for="{{menu}}" wx:key="">
+          <view class="left-text {{index==selected?'selected':''}}" bindtap='selected'data-index="{{index}}">{{item.typeName}}</view>
+        </block>
+      </scroll-view>
+    </view>
+    <!--右  -->
+    <view class='mu-right'>
+       <scroll-view scroll-y="true" class='scroll-view'>
+          <view class='right-name'>{{menu[selected].typeName}}</view>
+          <block wx:for="{{menu[selected].menuContent}}" wx:key="">
+            <view class='right-box'>
+              <view class='item-box'>
+                <view class='item-img'><image src="{{item.src}}"></image></view>
+                <view class='item-text'>
+                  <view class='item-name'>{{item.name}}</view>
+                  <view class='item-sales'>月售{{item.sales}}月赞{{item.rating}}</view>
+                  <view class='item-price'>￥{{item.price}}</view>
+                    <view class='addbox'>
+                      <view class='rembtn' bindtap='rembtn' data-ee="{{index}}" wx:if="{{item.numb>0}}">-</view>
+                      <text class='item-numb' wx:if="{{item.numb>0}}">{{item.numb}}</text>
+                      <view class='addbtn' bindtap='addbtn' data-ee="{{index}}">+</view>
+                    </view>
+                </view>
+              </view>
+            </view>
+          </block>
+      </scroll-view> 
+    </view>
+    <!--购物车  -->
+    <template is="buycart" data="{{menu,money,selected,dc,paytext}}"></template>
+  </view>
+</view>

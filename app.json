@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/start/start",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#118fff",
+    "navigationBarTitleText": "小白商店"
+  }
+}

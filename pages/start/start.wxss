@@ -1,0 +1,61 @@
+.start{
+  background-color: #118fff;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.userbtn{
+    padding:5rpx 10rpx;
+    background-color:#fff;
+    border-radius:5px;
+    color:#000;
+    text-align:center;
+    margin:auto;
+    width:30%;
+    font-size:30rpx;
+    font-weight: 500;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30% 0;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.user-motto {
+  padding:10rpx 30rpx;
+  background-color:#fff;
+  border-radius:50px;
+  color:#000;
+  text-align:center;
+  margin:auto;
+  width:40%;
+  font-size:30rpx;
+  font-weight: 500;
+}
+.remind-img{
+  width: 260rpx;
+  height: 260rpx;
+  margin-left: 260rpx;
+}
+.fadeInUp{
+animation:fadeInUp 1s .2s ease both;
+}
+
+@keyframes fadeInUp{
+0%{opacity:0;
+transform:translateY(60rpx)}
+100%{opacity:1;
+transform:translateY(0)}
+}

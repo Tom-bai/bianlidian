@@ -1,0 +1,14 @@
+<template name="buycart">
+  <view class='buycartbox'>
+    <view class='cart-text'>
+      <view class='cart-img'>
+        <view class='img-box' style="background-color:{{money==0?'#ccc':''}}"><image src='../../img/trolley.png'></image></view>
+        </view>
+      <view class='cart-much'>
+        <view class='much-nub'>￥{{money}}元</view>
+        <view class='much-mian'>{{money<dc?'运费15元':'免费配送费'}}</view>
+      </view>
+      <view class='cart-btn' style="background-color:{{money>0?'#118fff':'#ccc'}}" bindtap='pay'>{{paytext}}</view>
+    </view>
+  </view>
+</template>

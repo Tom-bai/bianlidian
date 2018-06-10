@@ -1,0 +1,152 @@
+/**index.wxss**/
+.main{
+  display: flex;
+  /* position: absolute; */
+  height: 90%;
+  /* width: 100%; */
+}
+/*右  */
+.mu-left{
+  flex: 0 0 180rpx;
+  background-color: #f1f1f1;
+}
+.scroll-view{
+  height: 100%;
+}
+.left-text{
+  text-align: center;
+  font-size: 28rpx;
+  position: relative;
+  font-weight: 500;
+  padding: 20rpx 0;
+}
+.left-text::after{
+  content:"";
+  position: absolute;
+  width: 70%;
+  height: 1rpx;
+  background-color:#ECECEC;
+  bottom: 0;
+  left: 15%;
+}
+.selected{
+  background: #118fff;
+  color: #fff;
+}
+/*左  */
+.mu-right{
+  flex: 1;
+}
+.right-name{
+  text-align: center;
+  padding: 12rpx 0;
+}
+.item-box{
+  display: flex;
+  padding:16rpx 24rpx;
+  position: relative;
+  background-color: #fff;
+  border-bottom: solid 1rpx #ECECEC;
+}
+.item-img{
+  flex: 0 0 150rpx;
+  width: 150rpx;
+  height: 150rpx;
+  padding:10rpx;
+
+}
+.item-img>image{
+  width: 100%;
+  height: 100%;
+}
+.item-text{
+  flex: 1;
+}
+.item-name{
+  font-size: 32rpx;
+}
+.item-sales{
+  font-size: 28rpx;
+  color: #ACACAC
+}
+.item-price{
+  font-size: 42rpx;
+  color: red
+}
+.addbox{
+  position: absolute;
+  bottom:35rpx;
+  right:20rpx;
+  display: flex;
+}
+.rembtn{
+  width:40rpx;
+  height:40rpx;
+  background-color: #118fff;
+  border-radius: 50%;
+  line-height: 35rpx;
+  text-align: center;
+  color: #fff;
+}
+.item-numb{
+  height:40rpx;
+  text-align: center;
+  margin-top: -10rpx;
+  padding: 0 20rpx;
+}
+.addbtn{
+  width:40rpx;
+  height:40rpx;
+  background-color: #118fff;
+  border-radius: 50%;
+  line-height: 35rpx;
+  text-align: center;
+  color: #fff;
+}
+/*购物车  */
+.buycartbox{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 120rpx;
+  background-color: #fff;
+}
+.cart-text{
+  display: flex;
+}
+.cart-img{
+  width: 260rpx;
+  position: relative;
+}
+.img-box{
+  background-color: #118fff;
+  border-radius: 50%;
+  text-align: center;
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  top:-50rpx;
+  left: 60rpx;
+}
+.img-box >image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 22rpx;
+}
+.much-nub{
+  font-size: 48rpx;
+  color: red;
+}
+.much-mian{
+  font-size: 24rpx;
+}
+.cart-btn{
+  background-color: #ccc;
+  color: #fff;
+  margin-left: auto;
+  width:220rpx;
+  height:120rpx;
+  text-align: center;
+  line-height: 120rpx;
+}
